@@ -2,8 +2,10 @@ import axios from 'axios'
 
 // 创建axios实例
 const api = axios.create({
-  baseURL: '/api', // 基础URL前缀
-  timeout: 120000, // 请求超时时间，从30秒增加到120秒
+  baseURL: process.env.NODE_ENV === 'production' 
+    ? '/api' 
+    : 'http://localhost:8000/api', // 添加/api前缀
+  timeout: 30000, // 请求超时时间，从30秒增加到120秒
   headers: {
     'Content-Type': 'application/json',
   }

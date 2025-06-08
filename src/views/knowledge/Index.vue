@@ -105,11 +105,6 @@
               </div>
               <div class="plan-progress">
                 <span>{{ (plan.progress * 100).toFixed(0) }}%</span>
-                <el-progress 
-                  :percentage="plan.progress * 100" 
-                  :stroke-width="5" 
-                  :status="getProgressStatus(plan.progress)" 
-                />
               </div>
             </div>
           </div>

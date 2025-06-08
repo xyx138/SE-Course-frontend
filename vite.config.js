@@ -5,10 +5,24 @@ import path from 'path'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [vue()],
+  base: '/',
   resolve: {
     alias: {
       '@': path.resolve(__dirname, 'src'),
     },
+  },
+  build: {
+    outDir: 'dist',
+    assetsDir: 'assets',
+    chunkSizeWarningLimit: 1500,
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          'element-plus': ['element-plus'],
+          'vendor': ['vue', 'vue-router', 'vuex', 'axios']
+        }
+      }
+    }
   },
   server: {
     port: 3000,
