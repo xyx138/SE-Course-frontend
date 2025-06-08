@@ -1,0 +1,30 @@
+{
+  "name": "se-course-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "软件工程课程智能助手前端",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "serve": "vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@element-plus/icons-vue": "^2.1.0",
+    "axios": "^1.4.0",
+    "element-plus": "^2.3.6",
+    "markdown-it": "^14.1.0",
+    "markdown-it-vue": "^1.1.7",
+    "marked": "^15.0.12",
+    "vue": "^3.3.4",
+    "vue-router": "^4.2.2",
+    "vuex": "^4.1.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.2.3",
+    "vite": "^4.3.9"
+  }
+}
