@@ -29,7 +29,7 @@
 
 1. 克隆仓库
 ```bash
-git clone <repository-url>
+git clone git@github.com:xyx138/SE-Course-frontend.git
 cd SE-Course-frontend
 ```
 
